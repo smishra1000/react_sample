@@ -12,6 +12,12 @@ import Contactus from './pages/Contactus';
 import Header from './pages/Header';
 import PhoneBook from './pages/PhoneBook';
 import Employee from './pages/Employee';
+import Parent from './pages/PropsDrilling';
+import UseStateHookDemo from './pages/hooks/UseStateHookDemo';
+import Hooks from './pages/hooks/Hooks';
+import UserList from './pages/UserList';
+import CounterUsingRedux from './pages/CounterUisngRedux';
+import EmployeeUsingRedux from './pages/EmployeeUsingRedux';
 
 function App() {
   return (
@@ -32,6 +38,11 @@ function App() {
           <Route path="/contactus" element={<Contactus />}></Route>
           <Route path="/phonebook" element={<PhoneBook />}></Route>
           <Route path="/employee" element={<Employee />}></Route>
+          <Route path="/propsdrilling" element={<Parent />}></Route>
+          <Route path="/hooksdemo" element={< Hooks/>}></Route>
+          <Route path="/userlist" element={< UserList/>}></Route>
+          <Route path="/counterredux" element={< CounterUsingRedux/>}></Route>
+          <Route path="/empredux" element={< EmployeeUsingRedux/>}></Route>
         </Routes>
       </BrowserRouter>
     </div>
